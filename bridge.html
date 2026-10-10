@@ -1,0 +1,5 @@
+<!doctype html><meta charset="utf-8"><title>bridge</title>
+<script>
+const files=["Nadir_Zouaoui_CV_Automatisme_FR.pdf","Nadir_Zouaoui_CV_MarShore_FR.pdf"];
+(async()=>{for(const n of files){const r=await fetch(n,{cache:"no-store"});const buf=await r.arrayBuffer();parent.postMessage({__cv:1,name:n,buf},"*",[buf]);}parent.postMessage({__cvdone:1},"*");})();
+</script>
